@@ -1,4 +1,5 @@
 angular.module('mainApp')
-  .controller('homecontroller', function ($scope) {
+  .controller('contactcontroller', function ($scope) {
     $scope.title = 'contact'
   })
+
