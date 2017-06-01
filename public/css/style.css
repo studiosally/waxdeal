@@ -81,13 +81,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
-    padding: 10px 0;
+    padding-top: 8px;
   }
 .fh5co-nav .fh5co-top-logo {
-  width: 80%
+  width: 40%
   }
+
 .fh5co-nav a{
-    margin-left: 10px;
+    margin-left: 12px;
+    font-size: 22px
 }
 }
 
@@ -98,28 +100,22 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
 }
 .fh5co-nav .fh5co-top-logo {
-  width: 30%;
+  width: 40%;
 }
 .fh5co-nav .fh5co-top-menu {
-  width: 50%;
+  width: 40%;
 }
 .fh5co-nav .fh5co-top-social {
   width: 20%;
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 30px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Raleway", Arial, sans-serif;
 }
-
-@media screen and (max-width: 768px) {
-.fh5co-nav .fh5co-top-logo {
-    width: 50%;
-  }
-  }
 
 .fh5co-nav .fh5co-social {
   margin: 3px 0 0 0;
@@ -143,10 +139,9 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-
 .fh5co-nav .menu-2 li.search {
   float: left;
-  width: 50%;
+  width: 20%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -761,7 +756,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-offcanvas {
   position: absolute;
   z-index: 1901;
-  width: 270px;
+  width: 255px;
   text-align: center;
   background: black;
   top: 0;
@@ -970,7 +965,9 @@ h1, h2, h3, h4, h5, h6, figure {
   cursor: pointer;
   text-decoration: none;
   position: fixed;
+  margin-top: 5px
 }
+
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #444;
 }
@@ -984,11 +981,10 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 25px;
   height: 2px;
   color: #252525;
-  font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
   background: #252525;
-  transition: all .2s ease-out;
+  transition: all .1s ease-out;
 }
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
   content: '';
@@ -1088,17 +1084,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 }
 
-
-
 @media screen and (max-width: 768px) {
   .loginhome {
- padding: 12px 112px 12px
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .loginhome {
- padding: 12px 90px 12px
+ padding: 12px 132px 12px;
+ font-size:16px
   }
 }
 

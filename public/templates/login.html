@@ -8,9 +8,9 @@
                         <div class="info">
                             <div id="carousel-id" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
-                                    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                                    <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
                                     <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-                                    <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                                    <li data-target="#carousel-id" data-slide-to="2" class=""></li>
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item">
@@ -47,10 +47,10 @@
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active">
-                                        <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a>
+                                        <a aria-controls="login" role="tab" data-toggle="tab" aria-expanded="true" data-target="#login">Login</a>
                                     </li>
                                     <li role="presentation">
-                                        <a href="#signup" aria-controls="signup" role="tab" data-toggle="tab">Signup</a>
+                                        <a  aria-controls="signup" role="tab" data-toggle="tab" aria-expanded="false" data-target="#signup">Signup</a>
                                     </li>
                                 </ul>
                                 <!-- Tab panes -->
@@ -67,7 +67,7 @@
                                             <input class="form-control" type="password" name="" value="">
                                             <div class="checkbox">
                                                 <input type="checkbox" name="" value=""> Remember. <a href="" title="">Forgot Password?</a></div>
-                                            <input class="btn btn-submit" type="submit"> <a href="profile.html"> LOGIN</a>
+                                            <a href="#/profile" class="btn btn-submit" type="button" target="_parent">LOGIN></a> 
                                         </form>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="signup">
