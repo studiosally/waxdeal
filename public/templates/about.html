@@ -43,7 +43,7 @@
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                 <h2>Get Started</h2>
                 <p>You're stuck in the middle (Yeah, yeah). Too low to get under (Yeah, yeah). You're stuck in the middle (Yeah, yeah). It's too high to get over (Yeah, yeah). I'm Asking Him To Change. I told you that you sure looked good, now. (Na Na Na, Na Na Na, Na Na,. They Follow The Pattern Of. You're stuck in the middle (Yeah, yeah).</p>
-                <a href="#" class="btn btn-primary login" role="button" data-toggle="modal" data-target="#login-modal">LET'S EXCHANGE</a>
+                <a class="btn btn-primary login" role="button" data-toggle="modal" data-target="#login-modal">LET'S EXCHANGE</a>
                 <!-- BEGIN # MODAL LOGIN -->
                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                     <div class="container">
@@ -54,9 +54,9 @@
                                         <div class="info">
                                             <div id="carousel-id" class="carousel slide" data-ride="carousel">
                                                 <ol class="carousel-indicators">
-                                                    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                                                    <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
                                                     <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-                                                    <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                                                    <li data-target="#carousel-id" data-slide-to="2" class=""></li>
                                                 </ol>
                                                 <div class="carousel-inner">
                                                     <div class="item">
@@ -93,10 +93,10 @@
                                                 <!-- Nav tabs -->
                                                 <ul class="nav nav-tabs" role="tablist">
                                                     <li role="presentation" class="active">
-                                                        <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a>
+                                                        <a aria-controls="login" role="tab" data-toggle="tab" aria-expanded="true" data-target="#login">Login</a>
                                                     </li>
                                                     <li role="presentation">
-                                                        <a href="#signup" aria-controls="signup" role="tab" data-toggle="tab">Signup</a>
+                                                        <a aria-controls="signup" role="tab" data-toggle="tab" aria-expanded="false" data-target="#signup">Signup</a>
                                                     </li>
                                                 </ul>
                                                 <!-- Tab panes -->
@@ -113,7 +113,7 @@
                                                             <input class="form-control" type="password" name="" value="">
                                                             <div class="checkbox">
                                                                 <input type="checkbox" name="" value=""> Remember. <a href="" title="">Forgot Password?</a></div>
-                                                            <input class="btn btn-submit" type="submit" name="" value="Login">
+                                                            <a href="#/profile" class="btn btn-submit" type="button" target="_parent">LOGIN></a>
                                                         </form>
                                                     </div>
                                                     <div role="tabpanel" class="tab-pane" id="signup">
