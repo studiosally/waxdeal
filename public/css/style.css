@@ -10,6 +10,10 @@ body {
   background: #fff;
 }
 
+.row{
+  margin:0;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -25,7 +29,7 @@ body {
   position: absolute;
 }
 .offcanvas #page:after {
-  -webkit-transition: 2s;
+  -webkit-transition: 1s;
   -o-transition: 2s;
   transition: 2s;
   position: absolute;
@@ -82,17 +86,10 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav .fh5co-top-logo {
   width: 80%
   }
+.fh5co-nav a{
+    margin-left: 10px;
 }
-
-@media screen and (min-width: 300px) {
-  .fh5co-nav {
-    padding: 10px 0;
-  }
-.fh5co-nav .fh5co-top-logo {
-  width: 80%
-  }
 }
-
 
 
 .fh5co-nav .fh5co-top-logo,
@@ -145,6 +142,8 @@ h1, h2, h3, h4, h5, h6, figure {
     display: none;
   }
 }
+
+
 .fh5co-nav .menu-2 li.search {
   float: left;
   width: 50%;
@@ -159,7 +158,8 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 50%;
   border: none;
   float: right;
-  font-size: 13px;
+  font-size: 18px;
+  color: white
   margin-top: 4px;
   background: transparent;
   -webkit-transition: 0.3s;
@@ -323,9 +323,10 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
 }
 
-.fh5co-social-icons:hover {
- color:red;
+.fh5co-social-icons a:hover {
+ color: red;
 }
+
 .fh5co-social-icons li {
   margin: 0;
   padding: 0;
@@ -378,8 +379,24 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .contactbutton{
-  padding: 15px 50px;
+  background: #2791ee;
+  border-radius: 0;
+  padding: 12px 113px;
+  margin-top: 12px;
+  margin-left: 15px;
+  font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+.contactbutton {
+    padding: 12px 58px;
+}
+}
+
+.contactbutton:hover{
+  background: #4caf50
+}
+
 
 .fh5co-bg-section {
   background: rgba(0, 0, 0, 0.05);
@@ -507,9 +524,18 @@ h1, h2, h3, h4, h5, h6, figure {
 .top-line {
   padding-bottom: 7em;
 }
+
+
+@media screen and (max-width: 768px) {
+ .top-line {
+  padding-bottom: 25px;
+  }
+}
+
+
 .top-line .fh5co-heading {
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -736,6 +762,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   z-index: 1901;
   width: 270px;
+  text-align: center;
   background: black;
   top: 0;
   right: 0;
@@ -752,6 +779,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+
 }
 @media screen and (max-width: 768px) {
   #fh5co-offcanvas {
@@ -766,13 +794,13 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
 }
 #fh5co-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: yellow;
 }
 #fh5co-offcanvas .fh5co-social {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 #fh5co-offcanvas .fh5co-social li {
   display: inline;
@@ -781,6 +809,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-offcanvas ul {
   padding: 0;
   margin: 0;
+  font-size: 20px;
+
 }
 #fh5co-offcanvas ul li {
   padding: 0;
@@ -1050,29 +1080,40 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #2791ee;
   border-radius: 0;
   padding: 10px 86px;
+  font-size: 14px
 }
 
-a.btn.btn-primary.loginhome{
-  font-size: 19px;
-}
-
-a.btn.btn-primary.loginhome:hover{
-  font-size: 19px;
-  background: #2791ee;
-}
-
-.login:hover{
-  background: white
-  border: 1px solid #2791ee;
-  color: #2791ee
+.loginhome:hover {
+  background: #4caf50;
 
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .loginhome {
+ padding: 12px 112px 12px
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .loginhome {
+ padding: 12px 90px 12px
+  }
+}
+
+
 .login {
   color: #fff
   font-size: 25px;
   background: #2791ee;
   border-radius: 0;
   padding: 15px 96px;
+}
+
+a.btn.btn-primary-btn-lg.login:hover{
+  font-size: 19px;
+  background: #green;
 }
 
 
@@ -1305,6 +1346,9 @@ padding: 60px 0;
 
 /*-----------------------------*/
 
+.margenprofile{
+  margin-top: 50px
+}
 
 .profileinfo p{
   font-size: 16px;
@@ -1373,19 +1417,19 @@ background-color: #000000;
 
 @media screen and (max-width: 768px) {
   .searchmusicbutton {
- padding: 20px 80px 20px;
-  }
+  padding: 20px 53px 20px;  
+}
 }
 
 @media screen and (max-width: 768px) {
   .contactmebutton {
- padding: 10px 40px 10px;
+ padding: 10px 22px 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .followmemebutton {
- padding: 10px 19px 10px;
+ padding: 10px 10px 10px;
   }
 }
 
