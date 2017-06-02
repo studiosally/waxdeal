@@ -81,11 +81,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
-    padding-top: 8px;
+    padding-top: 5px;
   }
 
 .fh5co-nav a{
-    font-size: 20px
+    font-size: 18px
 }
 
   .logowax {
@@ -94,12 +94,15 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .fh5co-nav #fh5co-logo{
-    width: 200px
+    width: 220px
   }
 }
 
+
+/*
+-----------------------------*/
 .logowax{
-  margin-right: 18px;
+  margin-right: 10px;
 }
 
 
@@ -194,7 +197,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul {
   padding: 0;
     margin-top: 41px;
-    margin-left: 23px;
+    margin-left: 65px;
   font-weight: bold;
 }
 .fh5co-nav ul li {
@@ -679,26 +682,6 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 10px;
 }
 
-.skills h3 {
-  font-size: 16px;
-}
-.skills .progress {
-  border: none;
-  box-shadow: none;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px;
-}
-.skills .progress-bar {
-  box-shadow: none;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px;
-  background: #cabcab;
-}
-
 #fh5co-started {
   background: #000000;
 }
@@ -1082,26 +1065,37 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-.loginhome {
-  color: #fff;
-  background: #2791ee;
-  border-radius: 0px;
-  padding: 10px 86px;
-  font-size: 18px
+.searchmusichome {
+    background: transparent;
+    border-radius: 0px;
+    padding: 10px 52px;
+    font-size: 18px;
+    border: solid 2px black;
+    color: black
 }
 
-.loginhome:hover {
-  background: #4caf50;
-  border-radius: 0px;
 
+.searchmusichome:hover {
+  background: black;
+  border-radius: 0px;
+  color: white;
+  
 }
 
 @media screen and (max-width: 768px) {
-  .loginhome {
- padding: 12px 132px 12px;
+  .searchmusichome {
+ padding: 12px 94px 12px;
  font-size:16px
   }
+  .exchangemarketclaim{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0;
+
+  }
 }
+
+
 
 
 .login {
@@ -1348,7 +1342,8 @@ padding: 60px 0;
 /*-----------------------------*/
 
 .margenprofile{
-  margin-top: 50px
+  margin-top: 50px;
+  padding: 0px;
 }
 
 .profileinfo p{
@@ -1369,7 +1364,7 @@ padding: 60px 0;
 }
 
 .profilepicture{
- max-width: 100%;
+ max-width: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1398,41 +1393,41 @@ padding: 60px 0;
 }
 
 .searchmusicbutton{
-    background: orange;
-
+    background: transparent;
     margin-top: 5px;
     border-radius: 0;
-    padding: 7px 50px 9px 40px;
-    font-size: 23px;
-    border: 0;
-}
+    padding: 5px 35px 5px 35px;
+    font-size: 20px;
+    border: solid 2px black;
+    color: black;
 
-a .searchmusicbutton{
-      color: white;
 }
 
 .searchmusicbutton:hover{
 background-color: #000000;
+color: white
+}
+
+.followmebutton{
+  padding: 6px 22px;
+  background: #03A9F4;
+  color: white;
 }
 
 
 @media screen and (max-width: 768px) {
+  
   .searchmusicbutton {
-  padding: 20px 53px 20px;  
+  padding: 10px 56px 10px;
 }
-}
-
-@media screen and (max-width: 768px) {
-  .contactmebutton {
+.contactmebutton {
  padding: 10px 22px 10px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .followmemebutton {
- padding: 10px 10px 10px;
+   .followmebutton {
+ padding: 10px 33px
   }
 }
+
 
 /*---------------------------*/
 
@@ -1829,6 +1824,14 @@ SEARCH PAGE
 
 -------------------------------------*/
 
+.exchangemarketclaim{
+  margin-left: 15px;
+  margin-bottom: 40px
+}
+
+.exchangemarketclaim h2 span{
+  font-style: italic;
+}
 .grid {
     position: relative;
     width: 100%;
