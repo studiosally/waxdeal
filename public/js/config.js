@@ -29,5 +29,9 @@ angular.module('mainApp')
                 templateUrl: '/templates/search.html',
                 controller: 'searchcontroller'
             })
+             .when('/panel',{
+            templateUrl: '/templates/panel.html',
+            controller: 'panelcontroller'
+            })
 
     })
