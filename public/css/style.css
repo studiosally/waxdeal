@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  padding: 25px 0;
+  padding: 5px 0;
   z-index: 1;
   background: white;
 }
@@ -85,9 +85,21 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
 .fh5co-nav a{
-    margin-left: 14px;
     font-size: 20px
 }
+
+  .logowax {
+    height: 60px;
+    margin-left: 12px
+  }
+
+  .fh5co-nav #fh5co-logo{
+    width: 200px
+  }
+}
+
+.logowax{
+  margin-right: 20px;
 }
 
 
@@ -97,16 +109,17 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
 }
 .fh5co-nav .fh5co-top-logo {
-  width: 40%;
+  width: 30%;
 }
+
 .fh5co-nav .fh5co-top-menu {
-  width: 40%;
+  width: 50%;
 }
 .fh5co-nav .fh5co-top-social {
   width: 20%;
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -115,8 +128,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav .fh5co-social {
-  margin: 3px 0 0 0;
   padding: 0;
+  margin-top: 43px;
 }
 .fh5co-nav .fh5co-social li {
   padding: 0;
@@ -138,7 +151,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-nav .menu-2 li.search {
   float: left;
-  width: 10%;
+  width: 20%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -180,7 +193,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul {
   padding: 0;
-  margin: 15px 0 0 0;
+    margin-top: 41px;
+    margin-left: 23px;
   font-weight: bold;
 }
 .fh5co-nav ul li {
@@ -1042,8 +1056,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-nav-toggle {
   position: absolute;
-  right: 0px;
-  top: 10px;
+  right: 16px;
+    top: 20px;
   z-index: 21;
   padding: 6px 0 0 0;
   display: block;
