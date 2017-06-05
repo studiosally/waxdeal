@@ -33,5 +33,9 @@ angular.module('mainApp')
             templateUrl: '/templates/panel.html',
             controller: 'panelcontroller'
             })
+            .when('/panelprofile',{
+            templateUrl: '/templates/panelprofile.html',
+            controller: 'panelprofilecontroller'
+            })
 
     })

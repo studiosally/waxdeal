@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-heading h3 {
     font-size: 18px;
     margin-bottom: 18px;
-    color: blue;
+    color: black;
 }
 
 .contacticons{
@@ -605,9 +605,10 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 18px;
 }
 .fh5co-heading p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #828282;
+  margin-bottom: 10px;
+  color: white;
 }
 .fh5co-heading span {
   display: block;
@@ -692,9 +693,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   margin-bottom: 20px;
 }
-#fh5co-started .fh5co-heading p {
-  color: #fff;
-}
+
 #fh5co-started .btn {
   margin-top: 20px;
   color: #fff;
@@ -1096,8 +1095,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-
-
 .login {
   color: #fff
   font-size: 25px;
@@ -1330,11 +1327,27 @@ padding: 60px 0;
     font-size: 20px;
     margin-top: 10px;
     padding: 0;
+    text-align: left;
 }
 
+.loginformmodal p{
+    color: black;
+    text-align: left;
+}
 .carousel-inner{
       margin-top: 60px;
 }
+
+.loginsignupmodal {
+  color: black;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.loginsignupmodal p{
+font-size: 15px
+}
+
 /*---------------------------*/
 
 /*Profile section*/
@@ -1354,7 +1367,7 @@ padding: 60px 0;
 
 .boxborder {
   border-radius: 0px;
-          position: relative;
+    position: relative;
     width: 100%;
     background: #fff;
     color: #666666;
@@ -1414,6 +1427,9 @@ color: white
   color: white;
 }
 
+.followmebutton:hover{
+  color: white;
+}
 
 @media screen and (max-width: 768px) {
   
@@ -1908,8 +1924,112 @@ p{
 }
 }
 
+/*
+--------------------------------
+
+panel 
 
 
+-----------------------------------*/
+
+.profileinfo{
+  padding: 0px;
+
+}
 
 
+.profileinfo h3{
+  margin-left: 15px;
+  
+}
 
+.profileinfo p{
+  color: black;
+  padding: 0px;
+margin-bottom: 15px;
+   margin-left: 15px;
+   font-size: 18px;
+}
+
+.hipanel{
+      margin-top: 25px;
+    margin-left: 50px;
+}
+
+.panelformat{
+    margin-top: 30px;
+
+}
+
+.fromlibrarybutton{
+    background: transparent;
+    margin-top: 5px;
+    border-radius: 0;
+    padding: 5px 35px 5px 35px;
+    font-size: 20px;
+    border: solid 2px black;
+    color: black;
+}
+
+.fromlibrarybutton:hover{
+background: black;
+color: white;
+}
+
+.control-label{
+    color: black;
+    font-size: 20px;
+    margin-left: 2px;
+     text-align: left;
+}
+
+
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left
+  }
+
+.inputnamemusic{
+  border-radius: 0px;
+}
+
+.formmargin{
+ margin-top: 50px;
+
+}
+
+.searchmusichomepanel{
+    background: transparent;
+    border-radius: 0px;
+    padding: 10px 60px;
+    font-size: 18px;
+    border: solid 2px black;
+    color: black;
+    margin: 20px -5px 40px;
+
+}
+
+.searchmusichomepanel:hover {
+  background: black;
+  border-radius: 0px;
+  color: white;
+  
+}
+
+
+/*
+--------------------------------
+
+panel profile
+
+-----------------------------------*/
+
+.panelprofile{
+  margin-top: 50px
+}
+
+.tablemargin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
