@@ -1,17 +1,17 @@
 function DataService ($http) {
 
 	function getAllWaxDeal() {
-		return $http.get('/api/WaxDeals')
+		return $http.get('/api/waxdeals')
 			.then( response => response.data )
 	}
 
 	function addWaxDeal( data ) {
-		return $http.post('/api/WaxDeals', data)
+		return $http.post('/api/waxdeals', data)
 			.then( response => response.data )
 	}
 
 	function removeWaxDeal( id ) {
-		return $http.delete(`/api/WaxDeal/${id}`)
+		return $http.delete('/api/waxdeal/${id}')
 			.then( response => response.data )
 	}
 

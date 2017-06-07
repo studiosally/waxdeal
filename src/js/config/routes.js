@@ -6,11 +6,10 @@ function configRoutes($routeProvider) {
         })
         .when('/about', {
             templateUrl: '/templates/about.html',
-            controller: 'aboutcontroller'
         })
         .when('/contact', {
-            templateUrl: '/templates/contact.html',
-            controller: 'contactcontroller'
+            templateUrl: '/templates/contact.html',  
+            controller: 'contactcontroller'    
         })
         .when('/profile', {
             templateUrl: '/templates/profile.html',
@@ -28,9 +27,9 @@ function configRoutes($routeProvider) {
             templateUrl: '/templates/search.html',
             controller: 'searchcontroller'
         })
-        .when('/panel', {
-            templateUrl: '/templates/panel.html',
-            controller: 'panelcontroller'
+        .when('admin/addWaxDeal', {
+            templateUrl: '/templates/addWaxDeal.html',
+            controller: 'addwaxdealcontroller'
         })
         .when('/panelprofile', {
             templateUrl: '/templates/panelprofile.html',
