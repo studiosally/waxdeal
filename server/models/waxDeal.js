@@ -14,6 +14,9 @@ const WaxDealSchema = new mongoose.Schema({
     Genre: {
         type: String
     },
+    Country: {
+        type: String
+    },
     image: String
 
 }, { collection })

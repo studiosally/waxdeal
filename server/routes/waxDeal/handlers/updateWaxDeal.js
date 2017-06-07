@@ -2,12 +2,16 @@ const WaxDeal = require( __base + 'models/WaxDeal')
 
 function updateWaxDeal (req,res) {
 	const { id } = req.params
-	const { name, description, image } = req.body
+	const { Albumtitle, ArtistAlbum, VinylCode, Genre,Country, image } = req.body
 
 	const dataToUpdate = {}
-	if (name) dataToUpdate.name = name
-	if (description) dataToUpdate.description = description
-	if (image) dataToUpdate.image = image
+	if (Albumtitle) dataToUpdate.Albumtitle = Albumtitle
+	if (ArtistAlbum) dataToUpdate.ArtistAlbum = ArtistAlbum
+	if (VinylCode) dataToUpdate.VinylCode = VinylCode
+	if (Genre) dataToUpdate.Genre = Genre
+	if (Country) dataToUpdate.Country = Country
+	if (image) dataToUpdate.Country = image
+
 
 	WaxDeal.findByIdAndUpdate( id,  dataToUpdate)
 		.then( () => res.status(200).json({ msg: `WaxDeal w/ id ${id} updated properly`}) )
