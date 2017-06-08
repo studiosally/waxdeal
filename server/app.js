@@ -18,6 +18,8 @@ app.use( express.static(path.join(__dirname,'../client')))
 app.use('/api/waxdeals', routesWaxDeals)
 app.use('/api/waxdeal', routesWaxDeal)
 
+
+
 module.exports = app
 
 

@@ -4,6 +4,11 @@ function configRoutes($routeProvider) {
             templateUrl: '/templates/home.html',
             controller: 'homecontroller'
         })
+         .when('/addwaxdeal', {
+            templateUrl: '/templates/addWaxDeal.html',
+            controller: 'addwaxdealcontroller'
+        })
+
         .when('/about', {
             templateUrl: '/templates/about.html',
         })
@@ -27,10 +32,7 @@ function configRoutes($routeProvider) {
             templateUrl: '/templates/search.html',
             controller: 'searchcontroller'
         })
-        .when('admin/addWaxDeal', {
-            templateUrl: '/templates/addWaxDeal.html',
-            controller: 'addwaxdealcontroller'
-        })
+       
         .when('/panelprofile', {
             templateUrl: '/templates/panelprofile.html',
             controller: 'panelprofilecontroller'

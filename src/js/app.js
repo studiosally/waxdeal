@@ -2,7 +2,6 @@ const angular = require('angular')
 const angularRoute = require("angular-route");
 
 const homecontroller = require('./controllers/homecontroller')
-const aboutcontroller = require('./controllers/aboutcontroller')
 const contactcontroller = require('./controllers/contactcontroller')
 const profilecontroller = require('./controllers/profilecontroller')
 const disccontroller = require('./controllers/disccontroller')
@@ -16,7 +15,6 @@ const ApiService = require('./services/ApiService.js')
 
 angular.module('mainApp', [ angularRoute ])
     .controller('homecontroller', homecontroller)
-    .controller('aboutcontroller', aboutcontroller)
     .controller('contactcontroller', contactcontroller)
     .controller('profilecontroller', profilecontroller)
     .controller('disccontroller', disccontroller)

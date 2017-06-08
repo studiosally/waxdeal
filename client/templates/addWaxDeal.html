@@ -9,23 +9,17 @@
                 </div>
             </div>
 
-            <div class="col-md-8 profileinfo">
-                <h3>Any new vinyl you want to exchange?</h3> 
-                <p>Upload the picture of your vinyl, you can choose if from your library or your camera.  </br>Say Hi!! 📷</p>
-                <div class="col-md-9">
+          <div class="col-md-8 profileinfo">
+              <h3>Any new vinyl you want to exchange?</h3>
+              <p>Upload the picture of your vinyl, you can choose if from your library</p>
+           </div>
 
-                <a type="button" class="btn fromlibrarybutton" > Upload Vinyl</a>
-                </div>
-               <!--  <div class="col-md-9">
-                <a type="button" href="#!/panel" class="btn searchmusicbutton"> CAMERA</a>
-                </div> -->
-                  </div>
 
 <div class="container">
 <div class="row">
 <div class="col-md-9 panelformat">
  
-<form class="form-horizontal">
+<form class="form-horizontal" ng-submit="addrecord()">
 <fieldset>
 
 
@@ -33,68 +27,76 @@
 <legend>DISC DESCRIPTION </legend>
 
 <div class="formmargin">
+<!-- //Albumtitle, ArtistAlbum, VinylCode, Genre, Country, image  -->
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-3 control-label " for="textinput">Album Title</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="required" class="form-control input-md inputnamemusic" type="text">
+  <label class="col-md-4 control-label " for="Albumtitle" >Album Title</label>  
+  <div class="col-md-5">
+  <input id="textinput" name="Albumtitle" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="Albumtitle">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-3 control-label" for="textinput">Album Artist</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="required" class="form-control input-md inputnamemusic" type="text">
+  <label class="col-md-4 control-label" for="ArtistAlbum">Album Artist</label>  
+  <div class="col-md-5">
+  <input id="textinput" name="ArtistAlbum" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="ArtistAlbum">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-3 control-label" for="textinput">Genre</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="required" class="form-control input-md inputnamemusic" type="text">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-3 control-label" for="textinput">Country</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="required" class="form-control input-md inputnamemusic" type="text">
-    
-  </div>
-</div>
-
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-3 control-label" for="textinput">Vinyl Code</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="required" class="form-control input-md inputnamemusic" type="text">
+  <label class="col-md-4 control-label" for="VinylCode">Vinyl Code</label>  
+  <div class="col-md-5">
+  <input id="textinput" name="VinylCode" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="VinylCode">
   <p>*You can find this code in your vinyl</p>
   </div>
 </div>
-<!-- Multiple Radios (inline) -->
-<!-- <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Staat de partner ook onder beschermingsbewind?</label>
-  <div class="col-md-4"> 
-    <label class="radio-inline" for="radios-0">
-      <input name="radios" id="radios-0" value="Ja" checked="checked" type="radio">
-      Ja
-    </label> 
-    <label class="radio-inline" for="radios-1">
-      <input name="radios" id="radios-1" value="Nee" type="radio">
-      Nee
-    </label>
-  </div>
-</div> -->
 
- <div class="col-md-4 col-md-offset-3">
-<a type="button" class="btn searchmusichomepanel"  >SEARCH MUSIC</a>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Genre" >Genre</label>  
+  <div class="col-md-5">
+  <select  id="textinput" name="Genre" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="Genre">
+  <option value="Electronic">Electronic</option>
+  <option value="Rock">Rock</option>
+  <option value="Pop">Pop</option>
+  <option value="Jazz">Jazz</option>
+  <option value="Hip Hop">Hip Hop</option>
+  <option value="Folk, World, & Country">Folk, World, &amp; Country</option>
+  <option value="Classical">Classical</option>
+  <option value="Reggae">Reggae</option>
+  <option value="Stage & Screen">Stage &amp; Screen</option>
+  <option value="Blues">Blues</option>
+  <option value="latin">Latin</option>
+  <option value="Non-Music">Non-Music</option>
+  <option value="Children's">Children's</option>
+    <option value="Brass & Military">Brass &amp; Military</option>
+</select>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Country">Country</label>  
+  <div class="col-md-5">
+  <input id="textinput" name="Country" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="Country">
+    
+  </div>
+</div>
+
+   <div class="form-group">
+    <label class="col-md-4 control-label" for="filebutton">Upload your photo Vinyl</label>
+    <div class="col-md-5">
+    <input id="filebutton" name="filebutton" class="input-file uploadfilebutton" type="file" ng-model="image">
+                  
+    </div>
+ </div>
+ <div class="col-md-5 col-md-offset-4">
+<button type="submit" class="btn searchmusichomepanel">Add Wax Deal</button>
 </div>
  </div>
 

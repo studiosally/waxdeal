@@ -1,24 +1,4 @@
-<div class="container">
-    <hr class="">
-    <div class="container target">
-        <div class="row">
-            <div class="col-sm-3 ">
-                <a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive profilepicture" src="img/portadas/disco6.png"></a>
-            </div>
-            <div class="col-sm-offset-1 col-md-8 profileinfodisc">
-                <h1 class="">Wally Torres</h1>
-                <p>Young, wild and free.
-                    <br> It's the most beautiful lie that you've ever been told. </p>
-                <button type="button" class="btn btn-success borderbuttonprofile contactmebutton">Contact me!</button>
-                <button type="button" class="btn btn-info borderbuttonprofile followmemebutton">Follow my collection</button>
-                <br>
-                <button type="button" class="btn btn-info searchmusicbuttondisc"> <a href="search.html" style="color:#fff;">Search for music</a></button>
-            </div>
-        </div>
-        <br>
-    </div>
-</div>
-<div class="container">
+<div class="container modal fade" id="modalrecord_{{deal.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="row margindisc">
         <div class="col-sm-8 col-sm-offset-2">
             <div class="row">
@@ -27,13 +7,13 @@
                         <div class="post-heading">
                             <div class="pull-left meta">
                                 <div class="title h5">
-                                    <h3> Disc Title </h3>
-                                    <h5> Artist </h5>
+                                    <h3> {{deal.Albumtitle}} </h3>
+                                    <h5> {{deal.ArtistAlbum}}</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="post-image">
-                            <img src=""><img src="img/portadas/disco11.png" class="image" alt="image post">
+                            <img src=""><img src="{{deal.image}}" class="image" alt="image post">
                         </div>
                         <div class="post-description">
                             <h4>Disc Conditions</h4>
