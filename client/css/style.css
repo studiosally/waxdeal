@@ -1808,7 +1808,7 @@ color: white
 }
 .post .post-footer {
   border-top: 1px solid #ddd;
-  padding: 15px;
+  padding: 17px;
 }
 .post .post-footer .input-group-addon a {
   color: #454545;
@@ -1866,10 +1866,13 @@ color: white
 }
 
 .margindisc{
-      margin-top: 60px;
+      margin-top: 200px;
+      padding: 0
 }
 
-
+.imagemargindisc{
+  padding: 0
+}
 /*-------------------------------------
 
 SEARCH PAGE
