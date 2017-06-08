@@ -30,7 +30,7 @@ function configRoutes($routeProvider) {
         })
         .when('/search', {
             templateUrl: '/templates/search.html',
-            controller: 'searchcontroller'
+            controller: 'homecontroller'
         })
        
         .when('/panelprofile', {

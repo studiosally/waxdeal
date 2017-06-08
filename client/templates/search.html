@@ -65,7 +65,7 @@
                                 <div class="padding"></div>
                                 <div class="row orderby">
                                     <!-- BEGIN ORDER RESULT -->
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6" >
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default dropdown-toggle orderby" data-toggle="dropdown">
                                                 Order by <span class="caret"></span>
@@ -80,19 +80,17 @@
                                     <!-- END ORDER RESULT -->
                                 </div>
                                 <!-- BEGIN TABLE RESULT -->
-                                <div class="table-responsive">
+                                <div class="table-responsive" ng-repeat="deal in waxdeals">
                                     <table class="table table-hover">
                                         <tbody>
                                             <tr>
                                                 <td class="number text-center"><strong>1</strong></td>
                                                 <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco1.png" alt=""> </a>
+                                                    <a href="#/disc" data-toggle="modal" data-target="#modalrecord_{{ deal._id }}"><img src="{{deal.image}}" alt=""> </a>
                                                 </td>
                                                 <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
+                                                    <h3>{{deal.Albumtitle}}</h3>
+                                                    <p>{{deal.ArtistAlbum}}</p>
                                                     <h4>User: Wally Torres</h4>
                                                     <div>
                                                         <p>Media Condition: Very Good Plus (VG+)</p>
@@ -100,169 +98,11 @@
                                                     </div>
                                                 </td>
                                                 <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>2</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco2.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>3</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco3.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>4</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco4.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>5</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco5.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>6</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco6.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>7</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco7.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>8</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco8.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>9</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco9.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="number text-center"><strong>10</strong></td>
-                                                <td class="image">
-                                                    <a href="#/disc"><img src="img/portadas/disco10.png" alt=""> </a>
-                                                </td>
-                                                <td class="vinylproduct">
-                                                    <h3>ALBUM NAME</h3>
-                                                    <p>Artist</p>
-                                                    <p>Description</p>
-                                                    <br>
-                                                    <h4>User: Wally Torres</h4>
-                                                    <div>
-                                                        <p>Media Condition: Very Good Plus (VG+)</p>
-                                                        <p>Sleeve Condition: Good Plus (G+) </p>
-                                                    </div>
-                                                </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                                            </tr>
+                                            
+
+                                               <div ng-include="'templates/includes/recordmodal.html'"></div>
+                                               </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
