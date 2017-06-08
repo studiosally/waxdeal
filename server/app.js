@@ -5,8 +5,8 @@ const Discogs = require('disconnect').Client;
 
 const app = express()
 
-const routesWaxDeals = require('./routes/waxdeals')
-const routesWaxDeal = require('./routes/waxdeal')
+const routesWaxDeals = require('./routes/waxDeals')
+const routesWaxDeal = require('./routes/waxDeal')
 
 /* bodyParser */
 app.use(bodyParser.urlencoded({ extended: false }))

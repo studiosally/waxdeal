@@ -1,4 +1,4 @@
-const WaxDeal = require( __base + 'models/WaxDeal')
+const WaxDeal = require( __base + 'models/waxDeal')
 
 function getAll( req, res ) {
 
