@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router()
 
 const addWaxDeal = require('./handlers/addWaxDeal')
-const getAll = require('./handlers/getAll')
+const getall = require('./handlers/getall')
 
-router.get('/', getAll)
+router.get('/', getall)
 router.post('/', addWaxDeal)
 
 module.exports = router
