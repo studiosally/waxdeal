@@ -4,7 +4,7 @@
             <div class="col-md-7 col-md-push-5 text-left intro">
                 <h5>{{3+3}}</h5>
                 <h2>Exchange the vinyls you don't want anymore & discover new music. <span class="fh5co-highlight">Made with <i class="fa fa-heart"></i> by <a href="http://www.itswaxtime.com">Itswaxtime</a> </span></h2>
-                <a type="button" class="btn searchmusichome" href="#!/search">SEARCH MUSIC</a>
+                <a type="button" class="btn loginmusichome" href="#!/panelprofile">LOGIN</a>
             </div>
         </div>
         <div class="container">
@@ -34,10 +34,11 @@
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading getstarted">
                 <h2>Get Started</h2>
                 <p>You're stuck in the middle (Yeah, yeah). Too low to get under (Yeah, yeah). You're stuck in the middle (Yeah, yeah). It's too high to get over (Yeah, yeah). I'm Asking Him To Change. I told you that you sure looked good, now. (Na Na Na, Na Na Na, Na Na,. They Follow The Pattern Of. You're stuck in the middle (Yeah, yeah).</p>
-                <a class="btn btn-lg login" role="button" data-toggle="modal" data-target="#login-modal">LET'S EXCHANGE</a>
+
+                <button class="btn btn-lg login"  data-toggle="modal" data-dismiss="modal" data-target="#loginmodal">LET'S EXCHANGE</button>
+
                 <div ng-include="'templates/includes/login.html'"></div>
-                <!-- BEGIN # MODAL LOGIN -->
-                <!-- END # MODAL LOGIN -->
+
             </div>
         </div>
     </div>

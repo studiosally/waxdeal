@@ -55,7 +55,7 @@
                             <hr>
                             <!-- BEGIN SEARCH INPUT -->
                             <div class="input-group">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" ng-model="query">
                                 <span class="input-group-btn">
                                 <button class="btn btn-primary searchbutton" type="button"><i class="fa fa-search"></i></button>
                             </span>
@@ -80,11 +80,11 @@
                                     <!-- END ORDER RESULT -->
                                 </div>
                                 <!-- BEGIN TABLE RESULT -->
-                                <div class="table-responsive" ng-repeat="deal in waxdeals">
+                                <div class="table-responsive" ng-repeat="deal in waxdeals | filter: query">
                                     <table class="table table-hover">
                                         <tbody>
                                             <tr>
-                                                <td class="number text-center"><strong>1</strong></td>
+                                                <td class="number text-center"><strong>{{1+1}}</strong></td>
                                                 <td class="image">
                                                     <a href="#/disc" data-toggle="modal" data-target="#modalrecord_{{ deal._id }}"><img src="{{deal.image}}" alt=""> </a>
                                                 </td>
@@ -97,7 +97,7 @@
                                                         <p>Sleeve Condition: Good Plus (G+) </p>
                                                     </div>
                                                 </td>
-                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                                <!-- td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td> -->
                                             
 
                                                <div ng-include="'templates/includes/recordmodal.html'"></div>

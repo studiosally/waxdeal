@@ -1,7 +1,6 @@
 function addwaxdealcontroller($scope, $rootScope, ApiService){
 	$scope.title = 'addwaxdeal'
 
-
 	$scope.addrecord = function(){
 	console.log("click")
 
