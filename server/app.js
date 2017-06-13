@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 /* static folder */
-app.use( express.static(path.join(__dirname,'../client')))
+app.use( express.static(path.join(__dirname,'../client/public/')))
 
 app.use('/api/waxdeals', routesWaxDeals)
 app.use('/api/waxdeal', routesWaxDeal)
