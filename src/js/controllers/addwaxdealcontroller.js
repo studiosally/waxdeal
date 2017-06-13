@@ -16,7 +16,11 @@ function addwaxdealcontroller($scope, $rootScope, ApiService){
 	ApiService.addWaxDeal({Albumtitle, ArtistAlbum, VinylCode, Genre, Country, image})
 	.then(console.log)
 
-	}
+	$location.path('/panelprofile', $scope.waxDeal)
+
+  
+    }
+
 }
 module.exports = addwaxdealcontroller
 

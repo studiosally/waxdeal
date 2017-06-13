@@ -15,7 +15,12 @@ function DataService ($http) {
 			.then( response => response.data )
 	}
 
-	return { getAllWaxDeal, addWaxDeal, removeWaxDeal }
+	 function updateWaxDeal (id) {
+        return $http.put('/api/waxdeal/${id}')
+                .then(response => response.data)
+      }
+
+	return { getAllWaxDeal, addWaxDeal, removeWaxDeal, updateWaxDeal }
 
 }
 

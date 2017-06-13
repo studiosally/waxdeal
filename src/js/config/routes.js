@@ -6,8 +6,13 @@ function configRoutes($routeProvider) {
         })
          .when('/addwaxdeal', {
             templateUrl: '/templates/addWaxDeal.html',
-            controller: 'addwaxdealtabsController'
         })
+
+            .when('/addwaxdeal', {
+            templateUrl: '/templates/addWaxDeal.html',
+            controller: 'addwaxdealcontroller'
+        })
+
         .when('/about', {
             templateUrl: '/templates/about.html',
         })

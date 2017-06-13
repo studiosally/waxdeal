@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container" >
     <div class="container target">
         <div class="row margenprofile">
             <div class="col-sm-3 ">
                 <a href="/users"><img title="profile image" class="img-circle img-responsive profilepicture" src="img/portadas/disco6.png"></a>
                 <div class="hipanel">
-                    <h3>HI {{title}}</h3>
+                    <h3>HI Wally</h3>
                 </div>
             </div>
             <div class="col-md-8 profileinfo">
@@ -12,16 +12,87 @@
                 <p>You can find your Vinyl on Discogs or either upload the information of your vinyl.</p>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-9 panelformat">
-                        <div class="well">
-                            <ul class="tabs">
-
-                                <li ng-repeat="tab in tabs" ng-class="{active: current == tab.name}">
-                                    <span ng-model="tab.name" ng-click="toggleTab(tab)"></span>
-                                </li>
-                            </ul>
-                                 <div ng-include="tab" class="tabs-data"></div>
+              <div class="row">
+        <div class="col-md-9 panelformat">
+            <form class="form-horizontal" ng-submit="addrecord()">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>DISC DESCRIPTION </legend>
+                    <div class="formmargin">
+                        <!-- //Albumtitle, ArtistAlbum, VinylCode, Genre, Country, image  -->
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label " for="Albumtitle">Album Title</label>
+                            <div class="col-md-5">
+                                <input id="textinput" name="Albumtitle" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="Albumtitle">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="ArtistAlbum">Album Artist</label>
+                            <div class="col-md-5">
+                                <input id="textinput" name="ArtistAlbum" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="ArtistAlbum">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="VinylCode">Vinyl Code</label>
+                            <div class="col-md-5">
+                                <input id="textinput" name="VinylCode" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="VinylCode">
+                                <p>*You can find this code in your vinyl</p>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Genre">Genre</label>
+                            <div class="col-md-5">
+                                <select id="textinput" name="Genre" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="Genre">
+                                    <option value="Electronic">Electronic</option>
+                                    <option value="Rock">Rock</option>
+                                    <option value="Pop">Pop</option>
+                                    <option value="Jazz">Jazz</option>
+                                    <option value="Hip Hop">Hip Hop</option>
+                                    <option value="Funk / Soul"> Funk / Soul</option>
+                                    <option value="Folk, World, & Country">Folk, World, &amp; Country</option>
+                                    <option value="Classical">Classical</option>
+                                    <option value="Reggae">Reggae</option>
+                                    <option value="Stage & Screen">Stage &amp; Screen</option>
+                                    <option value="Blues">Blues</option>
+                                    <option value="latin">Latin</option>
+                                    <option value="Non-Music">Non-Music</option>
+                                    <option value="Children's">Children's</option>
+                                    <option value="Brass & Military">Brass &amp; Military</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Country">Country</label>
+                            <div class="col-md-5">
+                                <input id="textinput" name="Country" placeholder="required" class="form-control input-md inputnamemusic" type="text" ng-model="Country">
+                            </div>
+                        </div>
+                        <!--   <div class="form-group">
+    <label class="col-md-4 control-label" for="filebutton">Upload your photo Vinyl</label>
+    <div class="col-md-5">
+    <input id="filebutton" name="filebutton" class="input-file uploadfilebutton" type="file" ng-model="image">
+                  
+    </div>
+ </div> -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="image">Image</label>
+                            <div class="col-md-5">
+                                <input id="textinput" name="image" placeholder="img url" class="form-control input-md inputnamemusic" type="text" ng-model="image">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-4">
+                            <button type="submit" class="btn searchmusichomepanel">Add Wax Deal</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+      
                         </div>
                     </div>
                 </div>

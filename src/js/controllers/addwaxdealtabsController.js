@@ -1,26 +1,27 @@
-function addwaxdealtabsController($scope, $rootScope, ApiService) {
+function addwaxdealtabsController($scope,ApiService) {
     $scope.title = 'addwaxdeal'
+        console.log("aqui en addwadealcontroller")
 
     $scope.tabs = [
     {
         name: 'Upload deal',
-        url: 'tabs-data/owndata.html',
-        active1: false
-    }, {
-        name: 'From Discogs',
-        url: 'tabs-data/finditondiscogs.html',
+        url: '/templates/tabsdata/owndata.html',
         active1: true
     }, {
+        name: 'From Discogs',
+        url: '/templates/tabsdata/finditondiscogs.html',
+        active1: true   
+    }, {
         name: 'More information',
-        url: 'tabs-data/moreinformation.html',
-        active1: false
+        url: '/templates/tabsdata/moreinformation.html',
+        active1: true
     }
     ];
 
-    $scope.tab = 'tabs-data/finditondiscogs.html'; /*default tab*/
-    $scope.current = 'Discogs'; /*default active tab*/
+    $scope.tab = '/templates/tabsdata/owndata.html'; /*default tab*/
+    $scope.current = 'Upload your deal'; /*default active tab*/
 
-    $scope.toggleTab = function() {
+    $scope.toggleTab = function(s) {
         $scope.tab = s.url; /*tab changed*/
         $scope.current = s.name; /* changing value of current*/
     }

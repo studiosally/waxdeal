@@ -652,7 +652,7 @@ div.col-md-8.col-md-offset-2.text-center.fh5co-heading p::selection {
   margin-bottom: 20px;
 }
 
-#fh5co-started .btn {
+.login {
   margin-top: 20px;
   color: #fff;
   font-size: 20px;
@@ -661,7 +661,7 @@ div.col-md-8.col-md-offset-2.text-center.fh5co-heading p::selection {
   padding-left: 70px;
   padding-right: 70px;
 }
-#fh5co-started .btn:hover {
+.login:hover {
   background: #4CAF50;
   color: #fff;
 }
@@ -1178,161 +1178,100 @@ blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child{
    #
    ##################################################################### */
 
-
-
-.form-wrapper{
-max-width: 767px;
-padding: 100px 0;
-}
-@media(max-width: 767px){
-.form-wrapper:after{
-height: 40%;
-left: -7%;
-}
-}
-@media(max-width: 540px){
-.form-wrapper:after{
-height: 25%;
-}
-}
-@media(max-width: 340px){
-.form-wrapper:after{
-height: 20%;
-}
-}
-.form-wrapper .my-form{
-width: 90%;
-overflow: auto;
-margin: 0 auto;
+.loginstyle{
 background: black;
-position: relative;
-z-index: 9;
-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+      color: white;
+          margin: 0;
 }
-.my-form .info{
+
+.loginstylefooter {
+    border-radius: 0;
+}
+
+.loginstyle h2{
+  margin-top: 20px;
+
+}
+
+
+.loginstyle h4{
+color: white;
+font-size: 30px;
 padding: 10px;
-height: 100%;
 }
-.my-form .info .carousel-caption{
-margin: 0;
-padding: 0;
-bottom: 50px;
-right: 0;
-left: 0;
+
+
+.loginstyle h5{
+color: white;
+font-size: 22px;
+padding: 10px;
+text-align: left;
+margin-left: 7px;
 
 }
 
-div.carousel-caption p{
+
+.loginstylebody{
+      color: white;
+      font-size: 20px;
+}
+
+.modal-header{
+    padding: 25px;
+
+}
+
+.modal-footer {
+border-top: 0;
+}
+.inputdatalogin{
+    margin-left: 13px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+
+.login:hover {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.loginbuttonmodal {
+   color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+   background: #2791ee;
+    margin-top: 49px;
+    color: white;
+    font-size: 24px;
+    padding: 18px 80px;
+    border-radius: 0;
+
+}
+
+.loginbuttonmodal:hover{
+  background: #4CAF50;
+
+  color: #fff;
+}
+
+.signuppart{
+  border-left: 1px solid white;
+}
+.signupbuttonmodal{
+    border-radius: 0;
+    margin-top: 53px;
+    font-size: 21px;
+    padding: 20px;
+}
+
+.close{
   color: white;
+  opacity: 1;
 }
-.my-form .carousel-indicators .active{
-background: #FFEB3B;
-border-color: rgba(0, 0, 0, 0.5)
-}
-.my-form .item{
-padding: 60px 0;
-min-height: 300px;
-}
-.my-form .form-bg{
-background: #fff;
-padding: 15px
-}
-.main-form .nav > li{
-width: 50%;
-}
-.main-form .nav-tabs > li > a{
-border-radius: 0;
-display: inline-block;
-width: 100%;
-text-align: center;
-outline: 0;
-text-transform: uppercase;
-color: black;
-font-weight: 600;
-font-size: 13px;
-}
-.main-form .nav-tabs > li > a:hover{
-color: red;
-}
-.main-form .form-control{
-height: 50px;
-margin-top: 15px;
-border-radius: 0;
-box-shadow: none;
-border:1px solid #f0f0f0;
-}
-.main-form .form-control:focus{
-border-color: #fc80b2;
-}
-.main-form .checkbox{
-margin-left: 20px;
-color: #999;
-}
-.main-form .checkbox a{
-color: green;
-}
-.main-form .btn-submit{
-display: block;
-background: #2791ee;
-color: #fff;
-border-radius: 0;
-width: 100%;
-text-transform: uppercase;
-margin-top: 15px;
-padding: 12px;
-}
-
-.main-form .tab-content{
-padding: 60px 0;
-}
-
-.datalogin{
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 0;
-    text-align: left;
-}
-
-.loginformmodal p{
-    color: black;
-    text-align: left;
-}
-.carousel-inner{
-      margin-top: 60px;
-}
-
-.loginsignupmodal {
-  color: black;
-  text-align: left;
-  line-height: 1.6;
-}
-
-.loginsignupmodal p{
-font-size: 15px
-}
-
-
-button.close {
-    -webkit-appearance: none;
-    padding: 0;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-}
-
-.close {
-    float: right;
-    font-size: 35px;
-    margin: -20px;
-    font-weight: bold;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
-    opacity: .7;
-}
-
-
 /*---------------------------*/
 
 /*Profile section*/
@@ -1943,7 +1882,6 @@ panel
 
 .profileinfo{
   padding: 0px;
-  margin-top: 70px;
   margin-bottom: 50px;
 
 }
@@ -2068,5 +2006,5 @@ tabs panel profile
 .tabs li:hover {background: #fff; color: #000; }
 .tabs li.active {color: #000; background: #dbeaf0; cursor: auto;}
 .tabs li:first-child {margin-left: 0px;}
-.tabs-data {background: #dbeaf0; padding: 15px;}
+.tabs-data {background: #fefefe; padding: 15px;}
 .tabs-data h1 {font-size: 1.6em;}
