@@ -1,7 +1,10 @@
+var fs = require('fs');
+var htmlAbout = fs.readFileSync(__dirname + '/about.html', 'utf8');
+
 function configRoutes($routeProvider) {
   $routeProvider
   		 .when('/about', {
-            templateUrl: '/templates/about.html',
+            template: htmlAbout,
             controller: 'aboutcontroller'
         })
 }

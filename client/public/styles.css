@@ -429,6 +429,9 @@ div[toast].ng-leave.ng-leave-active {
   padding: 5px 0;
   color: #000; }
 
+.fh5co-nav a:hover {
+  color: blue; }
+
 div.col-md-8.col-md-offset-2.text-center.fh5co-heading p {
   color: white; }
 

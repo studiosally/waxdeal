@@ -1,7 +1,10 @@
+var fs = require('fs');
+var htmlAdmin = fs.readFileSync(__dirname + '/panelprofile.html', 'utf8');
+
 function configRoutes($routeProvider) {
   $routeProvider
     .when('/admin', {
-    	templateUrl: '/templates/panelprofile.html',
+    	template: htmlAdmin,
         controller: 'admincontroller'
        })
 }

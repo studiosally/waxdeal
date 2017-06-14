@@ -1,7 +1,10 @@
+var fs = require('fs');
+var htmlAddWaxDeal = fs.readFileSync(__dirname + '/addwaxdeal.html', 'utf8');
+
 function configRoutes($routeProvider) {
   $routeProvider
   		 .when('/addwaxdeal', {
-            templateUrl: '/templates/addwaxdeal.html',
+            template: htmlAddWaxDeal,
             controller: 'addwaxdealcontroller'
         })
 }

@@ -1,7 +1,10 @@
+var fs = require('fs');
+var htmlSearch = fs.readFileSync(__dirname + '/search.html', 'utf8');
+
 function configRoutes($routeProvider) {
   $routeProvider
     .when('/search', {
-    	templateUrl: '/templates/search.html',
+    	template: htmlSearch,
         controller: 'homecontroller'
        })
 }

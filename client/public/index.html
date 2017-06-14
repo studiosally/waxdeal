@@ -18,11 +18,12 @@
 </head>
 
 <body>
-    <div ng-hide="section === 'home'" ng-include src="'/templates/includes/header.html'"></div>
+    <div ng-include="'header.html'"></div>
+
     <ng-view></ng-view>
 
 
-    <div ng-hide="section === 'home'" ng-include src="'/templates/includes/footer.html'"></div>
+    <div ng-include src="'footer.html'"></div>
 
 
 

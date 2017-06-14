@@ -1,8 +1,12 @@
+const fs = require('fs');
+const htmlHome = fs.readFileSync(__dirname + '/home.html', 'utf8');
+
 function configRoutes($routeProvider) {
   $routeProvider
       .when('/', {
-        templateUrl: '/templates/home.html',
+        template: htmlHome,
         controller: 'homecontroller'
       })
 }
 module.exports = configRoutes
+
