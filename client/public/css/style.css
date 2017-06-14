@@ -1154,7 +1154,7 @@ blockquote ol:last-child {
 }
 .loginstyle h4 {
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     padding: 10px;
 }
 .loginstyle h5 {
@@ -1193,7 +1193,7 @@ blockquote ol:last-child {
     margin-top: 49px;
     color: white;
     font-size: 24px;
-    padding: 18px 80px;
+    padding: 10px 80px;
     border-radius: 0;
 }
 .loginbuttonmodal:hover {
@@ -1206,11 +1206,27 @@ blockquote ol:last-child {
 .signupbuttonmodal {
     border-radius: 0;
     margin-top: 53px;
-    font-size: 21px;
+    font-size: 25px;
     padding: 20px;
+    margin-top: 38px;
+    margin-right: 0;
+    color: white;
+    text-decoration: underline;
 }
+
+.signupbuttonmodal:hover{
+    color: yellow;
+} 
+
+
 .close {
     color: white;
+    opacity: 1;
+}
+
+
+.close:hover {
+    color: yellow;
     opacity: 1;
 }
 
@@ -1780,26 +1796,34 @@ panel
     margin: 0;
 }
 .profileinfo {
-    padding: 0px;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-bottom: 90px;
 }
 .profileinfo h3 {
-    margin-left: 15px;
+    font-size: 30px;
+    margin-bottom: 5px;
+} 
 }
 .profileinfo p {
     color: black;
     padding: 0px;
     margin-bottom: 15px;
-    margin-left: 15px;
     font-size: 18px;
+    padding: 13px;
 }
 .hipanel {
     margin-top: 25px;
     margin-left: 50px;
 }
-.panelformat {
-    margin-top: 30px;
+
+.hipanel p{
+    text-align: left;
+    font-size: 15px;
+    margin-left: -20px;
+    margin-top: 5px;
+    color: blue;
 }
+
 .fromlibrarybutton {
     background: transparent;
     margin-top: 5px;
@@ -1881,42 +1905,3 @@ record modal
     font-size: 30px;
 }
 
-/*
---------------------------------
-
-tabs panel profile
-
------------------------------------*/
-.tabs {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-.tabs li {
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px;
-    background: #f6f6f6;
-    color: #999;
-    margin: 0px 3px;
-    font-size: 1.3em;
-}
-.tabs li:hover {
-    background: #fff;
-    color: #000;
-}
-.tabs li.active {
-    color: #000;
-    background: #dbeaf0;
-    cursor: auto;
-}
-.tabs li:first-child {
-    margin-left: 0px;
-}
-.tabs-data {
-    background: #fefefe;
-    padding: 15px;
-}
-.tabs-data h1 {
-    font-size: 1.6em;
-}

@@ -1,6 +1,6 @@
 function configRoutes($routeProvider) {
   $routeProvider
-  		 .when('/addWaxDeal', {
+  		 .when('/addwaxdeal', {
             templateUrl: '/templates/addWaxDeal.html',
             controller: 'addwaxdealcontroller'
         })

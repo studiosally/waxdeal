@@ -1,8 +1,8 @@
 function configRoutes($routeProvider) {
   $routeProvider
-    .when('/panelprofile', {
+    .when('/admin', {
     	templateUrl: '/templates/panelprofile.html',
-        controller: 'homecontroller'
+        controller: 'admincontroller'
        })
 }
 module.exports = configRoutes

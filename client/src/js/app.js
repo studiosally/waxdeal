@@ -6,7 +6,7 @@ const toastr = require('angular-toastr')
 const routesApp = require('./routes')
 const ApiService = require('./services/ApiService')
 
-angular.module('mainApp', [ routesApp, ngAnimate, toastr ])
+angular.module('waxdealApp', [ routesApp, ngAnimate, toastr ])
 	.factory('ApiService', ApiService)
 
 

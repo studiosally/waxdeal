@@ -11,8 +11,8 @@ const AboutController = require('./about/aboutcontroller')
 const configRouteContact = require('./contact')
 const ContactController = require('./contact/contactcontroller')
 
-const configRoutePanelProfile = require('./panelprofile')
-const PanelProfileController = require('./panelprofile/panelprofilecontroller')
+const configRouteAdmin= require('./admin')
+const Admincontroller = require('./admin/admincontroller')
 
 const configRouteAddWaxDeal = require('./addwaxdeal')
 const AddWaxDealController = require('./addwaxdeal/addwaxdealcontroller')
@@ -35,15 +35,15 @@ angular.module('waxDealAppRoutes', [ angularRoute, "ngTable" ])
   .config( configRouteContact )
 
   // Route /panelprofile
-  .controller('panelprofilecontroller/', PanelProfileController)
-  .config( configRoutePanelProfile)
+  .controller('admincontroller', Admincontroller)
+  .config( configRouteAdmin)
 
     // Route /addwaxdeal
-  .controller('addwaxdealcontroller/', AddWaxDealController)
+  .controller('addwaxdealcontroller', AddWaxDealController)
   .config( configRouteAddWaxDeal)
 
       // Route /search
-  .controller('searchcontroller/', SearchController)
+  .controller('searchcontroller', SearchController)
   .config( configRouteSearch)
 
 
