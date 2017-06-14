@@ -7,14 +7,14 @@
                     <h3>HI Wally</h3>
                 </div>
             </div>
-            <div class="col-md-8 profileinfo">
-                <h4>Do you have any vinyl that you don listen anymore? Here you can upload that disc to exchange it with other collectors</h4>
+            <div class="col-md-8 profileinfoadmin">
+                <h3>Do you have any vinyl that you don listen anymore? Here you can upload that disc to exchange it with other collectors</h3>
                 <p>Fill the spaces below and upload your waxdeal to the music exchange market.</p>
-                <div class="col-md-9">
-                    <div>
+                <div>
+                    <div class="col-md-4 buttonadminstyle">
                         <a type="button" href="#!/search" class="btn searchmusicbutton"> SEARCH MUSIC</a>
                     </div>
-                    <div>
+                    <div class="col-md-4 buttonadminstyle">
                         <a type="button" href="#!/addwaxdeal" class="btn searchmusicbutton"> UPLOAD MUSIC</a>
                     </div>
                 </div>
@@ -25,10 +25,10 @@
                     <div class="col-md-12 panelprofile">
                         <h4>This is the collection I want to exchange</h4>
                         <div class="table-responsive tablemargin">
-                            <table ng-table="tableParams" class="table table-condensed table-bordered table-striped">
+                            <table ng-table="tableParams" class="table table-condensed table-bordered table-striped tableadmin">
                                 <tr ng-repeat="row in $data">
                                     <td data-title="'Image'">
-                                        <img width="50" ng-src="{{row.image}}" alt="" />
+                                        <img width="80" ng-src="{{row.image}}" alt="" />
                                     </td>
                                     <td data-title="'ID'" sortable="'_id'">{{row._id}}</td>
                                     <td data-title="'Albumtitle'" sortable="'Albumtitle'">{{row.Albumtitle}}</td>

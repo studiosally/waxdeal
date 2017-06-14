@@ -1445,13 +1445,27 @@ a.btn.btn-primary-btn-lg.login:hover {
 ADMIN
 
 -----------------------------------*/
+.profileinfoadmin {
+  margin-top: 50px;
+  margin-bottom: 70px; }
+
+.profileinfoadmin h3 {
+  font-size: 30px;
+  margin-bottom: 5px; }
+
+.profileinfoadmin p {
+  color: black;
+  padding: 0px;
+  margin-bottom: 15px;
+  font-size: 20px; }
+
 .profileinfodisc {
   padding: 0px;
   margin: 0; }
 
 .profileinfo {
   margin-top: 70px;
-  margin-bottom: 90px; }
+  margin-bottom: 77px; }
 
 .profileinfo h3 {
   font-size: 30px;
@@ -1461,8 +1475,7 @@ ADMIN
   color: black;
   padding: 0px;
   margin-bottom: 15px;
-  font-size: 18px;
-  padding: 13px; }
+  font-size: 20px; }
 
 .hipanel {
   margin-top: 25px;
@@ -1503,7 +1516,7 @@ ADMIN
   border-radius: 0px; }
 
 .formmargin {
-  margin-top: 50px; }
+  margin-top: 30px; }
 
 .searchmusichomepanel {
   background: transparent;
@@ -1522,6 +1535,14 @@ ADMIN
 .panelprofile {
   margin-top: 50px; }
 
+.tableadmin {
+  font-size: 17px;
+  text-align: center;
+  color: black; }
+
+.paneprofile img {
+  width: 50px; }
+
 .tablemargin {
   margin-top: 30px;
   margin-bottom: 30px; }
@@ -1533,6 +1554,9 @@ ADMIN
   padding-right: 21px;
   background: black;
   color: white; }
+
+.buttonadminstyle {
+  padding: 0px; }
 
 /*-----------------------------*/
 /*Profile section*/
