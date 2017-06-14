@@ -9,7 +9,7 @@ $rootScope.section = "addwaxdeal"
         ApiService.addWaxDeal({ Albumtitle, ArtistAlbum, VinylCode, Genre, Country, image })
             .then(msg => {
                 console.log(msg);
-                $location.path('/panelprofile');
+                $location.path('/admin');
                 toastr.success('Wax deal added!', 'Succes adding a new music deal');
             })
     }
