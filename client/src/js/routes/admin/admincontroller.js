@@ -10,11 +10,6 @@ function admincontroller($scope, $rootScope, NgTableParams, ApiService, toastr) 
             })
     }
 
-    // $scope.updateWaxDeal = function(id) {
-    //     apiTasksService.updateTask(id)
-    //     $location.path('/panelprofile', $scope.waxDeal)
-    // }
-
     function allWaxDealsToScope() {
 
         ApiService.getAllWaxDeal()
@@ -22,7 +17,7 @@ function admincontroller($scope, $rootScope, NgTableParams, ApiService, toastr) 
             $scope.waxdeals = waxdeals 
             console.log(waxdeals); 
             $scope.tableParams = new NgTableParams(
-            { sorting: { _id: "desc" } }, // initial sort order
+            { sorting: { _id: "desc" } }, 
             { dataset: waxdeals }
                 );
             })

@@ -11,16 +11,16 @@ function DataService ($http) {
 	}
 
 	function removeWaxDeal( id ) {
-		return $http.delete('/api/waxdeal/${id}')
+		return $http.delete(`/api/waxdeal/${id}`)
 			.then( response => response.data )
 	}
 
-	 function updateWaxDeal (id) {
-        return $http.put('/api/waxdeal/${id}')
-                .then(response => response.data)
-      }
+	 // function updateWaxDeal (id) {
+  //       return $http.put('/api/waxdeal/${id}')
+  //               .then(response => response.data)
+  //     }
 
-	return { getAllWaxDeal, addWaxDeal, removeWaxDeal, updateWaxDeal }
+	return { getAllWaxDeal, addWaxDeal, removeWaxDeal}
 
 }
 

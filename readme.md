@@ -25,7 +25,7 @@ curl 127.0.0.1:3000/api/waxDeals
 ## Remove Deal
 
 ```
-curl -X DELETE 127.0.0.1:3000/api/waxDeal/593691a5eac2f80c94123538
+curl -X DELETE 127.0.0.1:3000/api/waxDeal/5941093976cb2e16ef518b2d
 ```
 
 ## Update Deal
