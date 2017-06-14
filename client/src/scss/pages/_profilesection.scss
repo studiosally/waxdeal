@@ -1,0 +1,88 @@
+/*-----------------------------*/
+/*Profile section*/
+/*-----------------------------*/
+.margenprofile {
+    margin-top: 50px;
+    padding: 0px;
+}
+.profileinfo p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+.boxborder {
+    border-radius: 0px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    color: #666666;
+    border-radius: 2px;
+    margin-bottom: 25px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.profilepicture {
+    max-width: 80%;
+}
+@media screen and (max-width: 768px) {
+    .profilepicture {
+        max-width: 60%;
+        margin-bottom: 20px;
+        align-items: center;
+        margin-left: 50px
+    }
+}
+.borderbuttonprofile {
+    border-radius: 0;
+    margin-top: 20px
+}
+.borderbuttonprofile:hover {
+    background-color: #000000;
+}
+.searchbutton {
+    padding: 16px;
+}
+.searchmusicbutton {
+    background: transparent;
+    margin-top: 5px;
+    border-radius: 0;
+    padding: 5px 35px 5px 35px;
+    font-size: 20px;
+    border: solid 2px black;
+    color: black;
+}
+.searchmusicbutton:hover {
+    background-color: #000000;
+    color: white
+}
+.followmebutton {
+    padding: 6px 22px;
+    background: #03A9F4;
+    color: white;
+}
+.followmebutton:hover {
+    color: white;
+}
+.searchmusicbuttondisc {
+    background: black;
+    margin-top: 5px;
+    border-radius: 0;
+    padding: 10px 55px 10px 54px;
+    font-size: 20px;
+    border: solid 2px black;
+    color: black;
+}
+.searchmusicbuttondisc:hover {
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .searchmusicbuttondisc {
+        padding: 10px 56px 10px;
+    }
+    
+    .contactmebutton {
+        padding: 10px 22px 10px;
+    }
+    
+    .followmebutton {
+        padding: 10px 33px
+    }
+}

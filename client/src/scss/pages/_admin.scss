@@ -1,0 +1,98 @@
+/*
+--------------------------------
+ADMIN
+
+-----------------------------------*/
+.profileinfodisc {
+    padding: 0px;
+    margin: 0;
+}
+.profileinfo {
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+.profileinfo h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.profileinfo p {
+    color: black;
+    padding: 0px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 13px;
+}
+.hipanel {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.hipanel p{
+    text-align: left;
+    font-size: 15px;
+    margin-left: -20px;
+    margin-top: 5px;
+    color: blue;
+}
+
+.fromlibrarybutton {
+    background: transparent;
+    margin-top: 5px;
+    border-radius: 0;
+    padding: 5px 35px 5px 35px;
+    font-size: 20px;
+    border: solid 2px black;
+    color: black;
+}
+.fromlibrarybutton:hover {
+    background: black;
+    color: white;
+}
+.control-label {
+    color: black;
+    font-size: 20px;
+    margin-left: 2px;
+    text-align: left;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left
+}
+.inputnamemusic {
+    border-radius: 0px;
+}
+.formmargin {
+    margin-top: 50px;
+}
+.searchmusichomepanel {
+    background: transparent;
+    border-radius: 0px;
+    padding: 10px 102px;
+    font-size: 18px;
+    border: solid 2px black;
+    color: black;
+    margin: 20px -5px 40px;
+}
+.searchmusichomepanel:hover {
+    background: black;
+    border-radius: 0px;
+    color: white;
+}
+
+
+.panelprofile {
+    margin-top: 50px
+}
+.tablemargin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.uploadfilebutton {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 26px;
+    padding-right: 21px;
+    background: black;
+    color: white;
+}

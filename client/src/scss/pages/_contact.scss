@@ -1,0 +1,37 @@
+.fh5co-contact-info ul {
+    padding: 20px;
+    margin: 30px 0 30px 0;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+.fh5co-contact-info ul li {
+    list-style: none;
+    position: relative;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.contacticons {
+    font-size: 30px;
+    color: red;
+    margin-right: 10px;
+}
+.contactbutton {
+    background: #2791ee;
+    border-radius: 0;
+    padding: 12px 113px;
+    margin-top: 12px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    .contactbutton {
+        padding: 12px 58px;
+    }
+}
+.contactbutton:hover {
+    background: #4caf50
+}

@@ -1,0 +1,170 @@
+/* nav 
+-----------------------------*/
+
+.fh5co-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    z-index: 1;
+    background: white;
+    border-color: transparent;
+}
+
+.fh5co-nav a {
+    font-size: 30px
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: red;
+}
+
+.logowax {
+    margin-right: 10px;
+}
+
+.fh5co-nav #fh5co-logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+.fh5co-nav .fh5co-social {
+    padding: 0;
+    margin-top: 25px;
+}
+
+.fh5co-nav .fh5co-social li {
+    padding: 0;
+    margin: 0;
+}
+
+.fh5co-nav .fh5co-social li a {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.fh5co-nav a {
+    padding: 5px 0;
+    color: #000;
+}
+
+div.col-md-8.col-md-offset-2.text-center.fh5co-heading p {
+    color: white
+}
+
+.fh5co-heading h2::selection {
+    color: yellow;
+    background: white;
+}
+
+div.col-md-8.col-md-offset-2.text-center.fh5co-heading p::selection {
+    color: yellow;
+    background: white;
+}
+
+@media screen and (max-width: 768px) {
+    .fh5co-nav .menu-1,
+    .fh5co-nav .menu-2 {
+        display: none;
+    }
+}
+
+.fh5co-nav .menu-2 li.search {
+    float: left;
+    width: 10%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0;
+    margin: -5px 0 0 0;
+}
+
+.fh5co-nav .menu-2 li input[type=text] {
+    padding: 6px 10px;
+    width: 50%;
+    border: none;
+    float: right;
+    font-size: 18px;
+    color: white;
+    margin-top: 4px;
+    background: transparent;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.fh5co-nav .menu-2 li input[type=text]:focus {
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fh5co-nav .menu-2 li button {
+    margin-top: 4px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+}
+
+.fh5co-nav .menu-2 li button i {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fh5co-nav .menu-2 li button:hover,
+.fh5co-nav .menu-2 li button:focus {
+    background: transparent;
+}
+
+.fh5co-nav .menu-2 li button:hover i,
+.fh5co-nav .menu-2 li button:focus i {
+    color: black;
+}
+
+.fh5co-nav ul {
+    padding: 0;
+    font-weight: bold;
+    color: black;
+}
+
+.fh5co-nav ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+.fh5co-nav ul li a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px 10px;
+    color: rgba(0, 0, 0, 0.9);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.fh5co-nav ul li a:hover,
+.fh5co-nav ul li a:focus,
+.fh5co-nav ul li a:active {
+color: red;
+}
+
+.fh5co-nav ul li.active > a {
+    color: #cabcab;
+}
+.fh5co-nav ul li .form-group {
+    border: 1px solid red;
+    width: 100%;
+}
