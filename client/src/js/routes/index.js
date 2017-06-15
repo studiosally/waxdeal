@@ -14,6 +14,12 @@ const ContactController = require('./contact/contactcontroller')
 const configRouteAdmin= require('./admin')
 const Admincontroller = require('./admin/admincontroller')
 
+const configRouteRegister = require('./register')
+const RegisterController = require('./register/RegisterController')
+
+const configRouteLogin = require('./login')
+const LoginController = require('./login/LoginController')
+
 const configRouteAddWaxDeal = require('./addwaxdeal')
 const AddWaxDealController = require('./addwaxdeal/addwaxdealcontroller')
 
@@ -45,6 +51,15 @@ angular.module('waxDealAppRoutes', [ angularRoute, "ngTable" ])
       // Route /search
   .controller('searchcontroller', SearchController)
   .config( configRouteSearch)
+
+   // Route /register
+  .controller('RegisterController', RegisterController)
+  .config( configRouteRegister )
+  
+  // Route /login
+  
+  .controller('LoginController', LoginController)
+  .config( configRouteLogin )
 
 
 module.exports = 'waxDealAppRoutes'
