@@ -1672,7 +1672,7 @@ blockquote ol:last-child {
 
 .post .post-image .image {
   width: 100%;
-  height: 400px; }
+  height: 384px; }
 
 .post .post-description {
   padding: 15px; }
@@ -1756,7 +1756,11 @@ blockquote ol:last-child {
   padding: 0; }
 
 .recordmodalclose {
-  color: black;
+  color: blue;
+  font-size: 30px; }
+
+.recordmodalclose:hover {
+  color: red;
   font-size: 30px; }
 
 #fh5co-footer {
@@ -1975,11 +1979,11 @@ a.btn.btn-primary-btn-lg.login:hover {
   color: orange; }
 
 .close {
-  color: white;
+  color: blue;
   opacity: 1; }
 
 .close:hover {
-  color: yellow;
+  color: red;
   opacity: 1; }
 
 .login2 {
