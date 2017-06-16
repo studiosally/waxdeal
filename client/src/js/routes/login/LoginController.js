@@ -1,4 +1,4 @@
-function LoginController($scope, $location, AuthService) {
+function LoginController($scope, $location, AuthService, toastr) {
 
 	$scope.login = function(event) {
 		event.preventDefault()
@@ -8,6 +8,7 @@ function LoginController($scope, $location, AuthService) {
 			.then(msg => {
 				console.log(msg)
 				$location.path('/admin')
+				toastr.success('You are login in Wax Deal');
 			})
 			.catch(console.log)
 	}
