@@ -7,7 +7,6 @@ function configRoutes($routeProvider) {
     	template: htmlAdmin,
         controller: 'admincontroller',
         secure: true
-       
        })
 }
 module.exports = configRoutes

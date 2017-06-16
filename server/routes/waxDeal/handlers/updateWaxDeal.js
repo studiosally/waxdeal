@@ -3,6 +3,7 @@ const WaxDeal = require( __base + 'models/waxDeal')
 function updateWaxDeal (req,res) {
 	const { id } = req.params
 	const { Albumtitle, ArtistAlbum, VinylCode, Genre, Country, image } = req.body
+	console.log(req.body)
 
 	const dataToUpdate = {}
 	if (Albumtitle) dataToUpdate.Albumtitle = Albumtitle
@@ -20,3 +21,4 @@ function updateWaxDeal (req,res) {
 }
 
 module.exports = updateWaxDeal
+

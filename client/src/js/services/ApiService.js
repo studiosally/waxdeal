@@ -15,17 +15,22 @@ function DataService ($http) {
 			.then( response => response.data )
 	}
 
-	 // function updateWaxDeal (id) {
-  //       return $http.put('/api/waxdeal/${id}')
-  //               .then(response => response.data)
-  //     }
+	 function getSingleWaxDealbyid (id) {
+        return $http.get('/api/waxdeal/'+ id)
+                .then(response => response.data)
+      }
+
+	 function updateWaxDeal (id, data) {
+        return $http.put('/api/waxdeal/'+ id, data)
+                .then(response => response.data)
+      }
 
 	function sendMessage( dataMessage ) {
 		return $http.post('/contact', dataMessage)
 			.then( response => response.data )
 	}
 
-	return { getAllWaxDeal, addWaxDeal, removeWaxDeal, sendMessage}
+	return { getAllWaxDeal, addWaxDeal, removeWaxDeal, sendMessage, updateWaxDeal, getSingleWaxDealbyid}
 
 }
 

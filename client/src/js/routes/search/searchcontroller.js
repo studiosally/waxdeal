@@ -7,6 +7,8 @@ function searchcontroller($scope){
             template: htmlSearch,
             controller: 'searchcontroller'
         })
+	ApiService.getAllWaxDeal()
+	.then(waxdeals => $scope.waxdeals = waxdeals)
 
 }
 module.exports = searchcontroller

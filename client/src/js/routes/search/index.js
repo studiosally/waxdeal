@@ -5,7 +5,7 @@ function configRoutes($routeProvider) {
   $routeProvider
     .when('/search', {
     	template: htmlSearch,
-        controller: 'homecontroller',
+        controller: 'searchcontroller',
         secure:true 
        })
 }

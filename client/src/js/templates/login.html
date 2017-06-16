@@ -1,12 +1,12 @@
 <!-- Beggining of Log In Modal -->
-<div class="modal fade" id="login">
+<div  class="modal fade" id="login">
     <div class="modal-dialog modal-md">
         <div class="modal-content loginstyle">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">x</button>
                 <h2>Welcome to waxdeal</h2>
             </div>
-            <div class="container">
+            <div class="container" ng-controller=LoginController >
                 <div class="modal-body loginstylebody col-md-3">
                     <form  ng-submit="login($event)" method="post" action='' name="login_form">
                         <div>

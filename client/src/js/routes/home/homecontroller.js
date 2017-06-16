@@ -8,20 +8,6 @@ function homecontroller($scope, $rootScope, $location, ApiService, AuthService){
  // 	  console.log($rootScope.waxdeals)
 	// } )
 
-	$scope.login = function(event) {
-		event.preventDefault()
-		const { username, password } = $scope
-
-		AuthService.login(username, password)
-			.then(msg => {
-				console.log(msg)
-				$location.path('/admin')
-			})
-			.catch(console.log)
-	}
-
-
-
 	ApiService.getAllWaxDeal()
 	.then(waxdeals => $scope.waxdeals = waxdeals)
 

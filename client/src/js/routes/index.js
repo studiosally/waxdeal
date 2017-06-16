@@ -26,8 +26,12 @@ const LogoutController = require('./logout/LogoutController')
 const configRouteAddWaxDeal = require('./addwaxdeal')
 const AddWaxDealController = require('./addwaxdeal/addwaxdealcontroller')
 
+const configRouteEditWaxDeal = require('./editwaxdeal')
+const EditWaxDealController = require('./editwaxdeal/editwaxdealcontroller')
+
 const configRouteSearch = require('./search')
 const SearchController = require('./search/searchcontroller')
+
 
 angular.module('waxDealAppRoutes', [ angularRoute, "ngTable" ])
 
@@ -50,6 +54,12 @@ angular.module('waxDealAppRoutes', [ angularRoute, "ngTable" ])
     // Route /addwaxdeal
   .controller('addwaxdealcontroller', AddWaxDealController)
   .config( configRouteAddWaxDeal)
+
+
+    // Route /editwaxdeal
+  .controller('editwaxdealcontroller', EditWaxDealController)
+  .config( configRouteEditWaxDeal)
+
 
       // Route /search
   .controller('searchcontroller', SearchController)
