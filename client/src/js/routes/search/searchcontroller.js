@@ -1,12 +1,6 @@
-var fs = require('fs');
-var htmlSearch = fs.readFileSync(__dirname + '/search.html', 'utf8');
-
-function searchcontroller($scope){
- 	$routeProvider
-  		 .when('/search', {
-            template: htmlSearch,
-            controller: 'searchcontroller'
-        })
+function searchcontroller($scope, $rootScope, $location, ApiService, AuthService){
+	$scope.title = 'search'
+	console.log("aqui")
 	ApiService.getAllWaxDeal()
 	.then(waxdeals => $scope.waxdeals = waxdeals)
 

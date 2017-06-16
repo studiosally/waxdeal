@@ -6,7 +6,6 @@ function configRoutes($routeProvider) {
     .when('/search', {
     	template: htmlSearch,
         controller: 'searchcontroller',
-        secure:true 
        })
 }
 module.exports = configRoutes

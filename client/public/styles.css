@@ -931,7 +931,11 @@ div[toast].ng-leave.ng-leave-active {
   color: red; }
 
 .logowax {
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-top: -10px; }
+
+.logowax img {
+  height: 70px; }
 
 .fh5co-nav #fh5co-logo {
   font-size: 28px;
@@ -1864,12 +1868,16 @@ blockquote ol:last-child {
 
 @media screen and (max-width: 768px) {
   .loginmusichome {
-    padding: 12px 130px 12px;
+    padding: 12px 113px 12px;
     font-size: 16px; }
   .exchangemarketclaim {
     margin-top: 20px;
     margin-bottom: 40px;
-    padding: 0; } }
+    padding: 0; }
+  .btn.btn-lg {
+    padding: 15px 51px; }
+  .registerbutton {
+    padding: 10px 65px; } }
 
 .login {
   color: #fff;
@@ -2165,6 +2173,11 @@ ADMIN
   background: black;
   border-radius: 0px;
   color: white; }
+
+@mediascreen and (max-width: 768px) {
+  .searchmusichomepanel {
+    padding: 10px 82px;
+    margin: 17px -16px 40px; } }
 
 .panelprofile {
   margin-top: 50px; }
