@@ -56,39 +56,38 @@ The server part has multiple Api endpoints using several routes:
 ## Built with:
 * **SublimeText**
 * **Front-end**
-    "angular": "^1.6.4",
-    "angular-animate": "^1.6.4",
-    "angular-jwt": "^0.1.9",
-    "angular-route": "^1.6.4",
-    "angular-sweetalert": "^1.1.2",
-    "angular-toastr": "^2.1.1",
-    "babelify": "^7.3.0",
-    "bootstrap": "^3.3.7",
-    "bootstrap-sass": "^3.3.7",
-    "brfs": "^1.4.3",
-    "ng-table": "^3.0.1",
-    "node-sass": "^4.5.3",
+    - angular": "^1.6.4"
+    - angular-animate": "^1.6.4"
+    - angular-jwt": "^0.1.9"
+    - angular-route": "^1.6.4"
+    - angular-sweetalert": "^1.1.2"
+    - angular-toastr": "^2.1.1"
+    - bower": "^1.8.0"
+    - babelify": "^7.3.0"
+    - bootstrap": "^3.3.7"
+    - bootstrap-sass": "^3.3.7"
+    - brfs": "^1.4.3"
+    - ng-table": "^3.0.1"
+    - node-sass": "^4.5.3"
     
 * **Back-end**
-    "body-parser": "^1.17.2",
-    "bower": "^1.8.0",
-    "brfs": "^1.4.3",
-    "dotenv": "^4.0.0",
-    "express": "^4.15.3",
-    "mongoose": "^4.10.4",
-    "nodemailer": "^4.0.1",
-    "express-jwt": "^5.3.0",
-    "jsonwebtoken": "^7.4.1",
-    "passport": "^0.3.2",
-    "passport-jwt": "^2.2.1",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^4.0.0"
-    "browserify": "^14.4.0"
-    "nodemon": "^1.11.0",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1",
-    "sweetalert2": "^6.6.5",
-    "watchify": "^3.9.0"
+    - body-parser": "^1.17.2
+    - dotenv": "^4.0.0"
+    - express": "^4.15.3"
+    - mongoose": "^4.10.4"
+    - nodemailer": "^4.0.1"
+    - express-jwt": "^5.3.0"
+    - jsonwebtoken": "^7.4.1"
+    - passport": "^0.3.2"
+    - passport-jwt": "^2.2.1"
+    - passport-local": "^1.0.0"
+    - passport-local-mongoose": "^4.0.0"
+    - browserify": "^14.4.0"
+    - nodemon": "^1.11.0"
+    - request": "^2.81.0"
+    - request-promise": "^4.2.1"
+    - sweetalert2": "^6.6.5"
+    - watchify": "^3.9.0"
 
 ## Authors
 [Wally Torres ](https://github.com/studiosally)
@@ -100,7 +99,7 @@ CURLS ROUTES
 ```
 curl -X POST --data "Albumtitle=The Best of Quincy Jones‎(LP, Album&ArtistAlbum=Quincy Jones&VinylCode=SMAS 11163&Genre=Funk / Soul &Country=US&image=http://studiosally.com/portadas/disco1.png" 127.0.0.1:3000/api/waxDeals
 
-curl -X PUT --data "Albumtitle=Punk Floyd" 127.0.0.1:3000/api/waxdeal/5943be4379535915fe6e1779
+curl -X PUT --data "Albumtitle=Punk Floyd" 127.0.0.1:3000/api/waxdeal/5943c6f6a8f70e17b713afd4
 
 
 curl -X POST --data "Albumtitle=Offering for anxius(LP, Album&ArtistAlbum=Digss DukeKraftwerk&VinylCode=6305 058&Genre=Jazz&Country=EUROPE&image=http://studiosally.com/portadas/disco2.png" 127.0.0.1:3000/api/waxDeals
