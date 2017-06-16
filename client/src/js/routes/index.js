@@ -20,6 +20,9 @@ const RegisterController = require('./register/RegisterController')
 const configRouteLogin = require('./login')
 const LoginController = require('./login/LoginController')
 
+const configRouteLogout = require('./logout')
+const LogoutController = require('./logout/LogoutController')
+
 const configRouteAddWaxDeal = require('./addwaxdeal')
 const AddWaxDealController = require('./addwaxdeal/addwaxdealcontroller')
 
@@ -60,6 +63,10 @@ angular.module('waxDealAppRoutes', [ angularRoute, "ngTable" ])
   
   .controller('LoginController', LoginController)
   .config( configRouteLogin )
+
+   // Route /logout
+  .controller('LogoutController', LogoutController)
+  .config( configRouteLogout )
 
 
 module.exports = 'waxDealAppRoutes'

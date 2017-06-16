@@ -1,22 +1,21 @@
 const angular = require('angular')
 
 const ngAnimate = require('angular-animate')
-const angularJwt = require('angular-jwt')
 const toastr = require('angular-toastr')
+const sweetAlert = require('angular-sweetalert')
 
-const routesApp = require('./routes')
+const routesModule = require('./routes')
+const servicesModule = require('./services')
+
 const runAtBegin = require('./run')
 
-const ApiService = require('./services/ApiService')
-const AuthService = require('./services/AuthService')
-const AuthInterceptor = require('./services/AuthInterceptor')
-const StorageService = require('./services/StorageService')
-
-angular.module('waxdealApp', [ routesApp, ngAnimate, toastr, angularJwt])
-	.factory('ApiService', ApiService)
-	.factory('AuthService', AuthService)
-	.factory('AuthInterceptor', AuthInterceptor)
-	.factory('StorageService', StorageService)
-	.run( runAtBegin )
+angular.module('waxdealApp', [ 
+	routesModule,
+    servicesModule,
+    ngAnimate,
+    toastr,
+    'oitozero.ngSweetAlert'
+  ])
+  .run( runAtBegin )
 
 

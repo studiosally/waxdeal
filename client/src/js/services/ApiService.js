@@ -20,7 +20,12 @@ function DataService ($http) {
   //               .then(response => response.data)
   //     }
 
-	return { getAllWaxDeal, addWaxDeal, removeWaxDeal}
+	function sendMessage( dataMessage ) {
+		return $http.post('/contact', dataMessage)
+			.then( response => response.data )
+	}
+
+	return { getAllWaxDeal, addWaxDeal, removeWaxDeal, sendMessage}
 
 }
 
